@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
 
@@ -33,6 +33,8 @@ jobs:
 
       - name: Install composer dependencies
         uses: ramsey/composer-install@v2
+        with:
+          dependency-versions: ${{ matrix.dependency-versions }}
 
       - name: Run PHPUnit
         run: vendor/bin/phpunit tests
