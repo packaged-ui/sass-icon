@@ -8,7 +8,7 @@ $this: variables.$class-name;
 
 #{$this} {
   @if variables.$use-icon-font {
-    :before {
+    &::before {
       font-family: variables.$font-family;
       font-style: normal;
       font-weight: normal;
