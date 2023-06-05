@@ -49,7 +49,7 @@ if you are using an icon font you will need to describe the content of each icon
 
 Using an Icon Font
 ```php
-    Icons::i(Icons::ICON_ARROW_RIGHT)->sm()->primary();
+    Icons::i(Icons::ICON_TICK_CIRCLE)->sm()->primary();
 ```
 
 Using an Image 

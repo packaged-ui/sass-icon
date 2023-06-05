@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "php": ">=8.0",
+    "php": "^7.4||^8.0",
     "packaged-ui/bem-component": "^1.2",
     "packaged/glimpse": "^2.8",
     "packaged/ui": "^1.7",
