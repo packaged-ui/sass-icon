@@ -1,0 +1,35 @@
+@forward "variables";
+
+@use "variables";
+@use "sizes";
+@use "colours";
+
+$this: variables.$class-name;
+
+#{$this} {
+  @if variables.$use-icon-font {
+    :before {
+      font-family: variables.$font-family;
+      font-style: normal;
+      font-weight: normal;
+      speak: never;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  } @else {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

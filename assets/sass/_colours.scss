@@ -1,0 +1,41 @@
+@use "variables";
+
+$this: variables.$class-name;
+
+#{$this} {
+  &--primary {
+    color: variables.$primary-colour;
+  }
+
+  &--secondary {
+    color: variables.$secondary-colour;
+  }
+
+  &--tertiary {
+    color: variables.$tertiary-colour;
+  }
+
+  &--success {
+    color: variables.$success-colour;
+  }
+
+  &--danger {
+    color: variables.$danger-colour;
+  }
+
+  &--warning {
+    color: variables.$warning-colour;
+  }
+
+  &--info {
+    color: variables.$info-colour;
+  }
+
+  &--light {
+    color: variables.$light-colour;
+  }
+
+  &--dark {
+    color: variables.$dark-colour;
+  }
+}

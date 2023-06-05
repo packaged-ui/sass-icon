@@ -1,0 +1,40 @@
+{
+  "name": "icons",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "dist/main.min.js",
+  "style": "dist/main.min.css",
+  "sass": "assets/sass/main.scss",
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "dist/**/*.{css}",
+    "assets/**/*.{sass}"
+  ],
+  "scripts": {
+    "build:sass": "sass --style=compressed --no-source-map --no-charset --load-path=node_modules assets/sass/main.scss dist/main.min.css",
+    "prefix": "postcss --use autoprefixer --no-map --replace dist/main.min.css",
+    "start": "onchange 'assets/sass/**/*.scss' -- npm run build:sass && npm run prefix",
+    "build": "npm run build:sass && npm run prefix"
+  },
+  "browserslist": [
+    "defaults",
+    "> 0.02%",
+    "last 2 versions",
+    "not ie > 0",
+    "not ie_mob > 0"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.62.1",
+    "tslib": "^2.5.3",
+    "onchange": "^7.1.0"
+  }
+}

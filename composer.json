@@ -1,0 +1,32 @@
+{
+  "name": "packaged-ui/sass-icon",
+  "description": "A package of icons for use with the Cubex Framework, easily import your own icons into this package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kyle Essex",
+      "email": "kylegavinessex@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "packaged-ui/bem-component": "^1.2",
+    "packaged/glimpse": "^2.8",
+    "packaged/ui": "^1.7",
+    "packaged/dispatch": "^2.18"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^10.2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PackagedUi\\SassIcon\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PackagedUi\\SassIcon\\Tests\\": "tests/"
+    }
+  }
+}

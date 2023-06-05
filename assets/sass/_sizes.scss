@@ -1,0 +1,68 @@
+@use "variables";
+
+$this: variables.$class-name;
+
+#{$this} {
+  &--xs {
+    @if variables.$use-icon-font {
+      font-size: 0.5rem;
+    } @else {
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+
+  &--sm {
+    @if variables.$use-icon-font {
+      font-size: 0.75rem;
+    } @else {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+
+  &--md {
+    @if variables.$use-icon-font {
+      font-size: 1.2rem;
+    } @else {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  &--lg {
+    @if variables.$use-icon-font {
+      font-size: 1.5rem;
+    } @else {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &--xl {
+    @if variables.$use-icon-font {
+      font-size: 2rem;
+    } @else {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &--xxl {
+    @if variables.$use-icon-font {
+      font-size: 3rem;
+    } @else {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &--xxxl {
+    @if variables.$use-icon-font {
+      font-size: 4rem;
+    } @else {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
