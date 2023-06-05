@@ -12,8 +12,8 @@
     "test": "tests"
   },
   "files": [
-    "dist/**/*.{css}",
-    "assets/**/*.{sass}"
+    "dist/**/main.min.css",
+    "assets/**/*.{scss}"
   ],
   "scripts": {
     "build:sass": "sass --style=compressed --no-source-map --no-charset --load-path=node_modules assets/sass/main.scss dist/main.min.css",
