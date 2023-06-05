@@ -4,38 +4,38 @@ $this: variables.$class-name;
 
 #{$this} {
   &--primary {
-    color: variables.$primary-colour;
+    color: variables.$primary-colour !important;
   }
 
   &--secondary {
-    color: variables.$secondary-colour;
+    color: variables.$secondary-colour !important;
   }
 
   &--tertiary {
-    color: variables.$tertiary-colour;
+    color: variables.$tertiary-colour !important;
   }
 
   &--success {
-    color: variables.$success-colour;
+    color: variables.$success-colour !important;
   }
 
   &--danger {
-    color: variables.$danger-colour;
+    color: variables.$danger-colour !important;
   }
 
   &--warning {
-    color: variables.$warning-colour;
+    color: variables.$warning-colour !important;
   }
 
   &--info {
-    color: variables.$info-colour;
+    color: variables.$info-colour !important;
   }
 
   &--light {
-    color: variables.$light-colour;
+    color: variables.$light-colour !important;
   }
 
   &--dark {
-    color: variables.$dark-colour;
+    color: variables.$dark-colour !important;
   }
 }
